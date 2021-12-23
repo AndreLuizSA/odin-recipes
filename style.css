@@ -1,4 +1,131 @@
 /* Create the color palette with red as primary color green as secondary and orange as an extra color */
 
-/* Use the font-family mountains of christmas for the h1, a serif font for the h2 and for the paragraph, list and etc, use a sans-serif font, keep in mind that you can use what works best. */
+/* Use the font-family mountains of christmas for the h1, a serif font (Bree serif) for the h2 and for the paragraph, list and etc, use a sans-serif font (Source sans pro), keep in mind that you can use what works best. */
 
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Montserrat:wght@500;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    /* color palette*/
+    --color-primary: #146B3A;
+    --color-secondary: #a02d2f;
+    --color-terciary: #EA4630;
+    --color-extra: #F8B229;
+}
+
+/* GENRAL SETTINGS */
+li, a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    color: var(--color-extra);
+    text-decoration: none;
+}
+h1 {
+    text-transform: uppercase;
+    font-family: 'Arvo', serif;
+    margin: 3rem auto;
+    padding: 3rem auto;
+    text-align: center;
+    color: var(--color-secondary);
+}
+/* NAV-BAR */
+header {
+    margin: 0;
+    padding: 0;
+}
+.nav-container {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    background-color: var(--color-primary);
+    text-align: center;
+}
+.logo {
+    cursor: pointer;
+    width: 4rem;
+    margin-left: -100px;
+    padding: 0;
+}
+.nav_links {
+    list-style: none;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+    color: var(--color-secondary);
+}
+.buttons {
+    margin: auto;
+}
+.buttons a {
+    margin: auto 10px;
+}
+button {
+    font-family: "Montserrat";
+    font-weight: 900;
+    color: var(--color-primary);
+    padding: 9px 25px;
+    background-color: var(--color-extra);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    
+}
+
+button:hover {
+    background-color: var(--color-secondary);
+}
+
+/* MAIN */
+h2 {
+    text-align: center;
+    margin: 3rem auto;
+    padding: 2% auto;
+}
+.dinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.dinner .dinner-content {
+    margin: 25px 10px;
+}
+.dinner .dinner-content a img {
+    border-radius: 50px;
+}
+.dinner .dinner-content a img:hover {
+    transition: all 0.8s ease 0s;
+    transform: translateY(-10px);
+    box-shadow: 9px 8px 11px -3px rgba(0,0,0,0.71);
+}
+.dessert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.dessert .dessert-content{
+    margin: 25px 10px;
+}
+.dessert .dessert-content a img {
+    border-radius: 50px;
+}
+.dessert .dessert-content a img:hover{
+    transition: all 0.8s ease 0s;
+    transform: translateY(-10px);
+    box-shadow: 9px 8px 11px -3px rgba(0,0,0,0.71);
+}
+/*Add a hover to change the border radius of the recipes. You can also use box shadow.*/
